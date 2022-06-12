@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="favicons/site.webmanifest">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rasul.Surname</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<div class="mask">
+		<div class="loader"></div>
+	</div>
+	<header class="header">
+		<div class="container">
+			<div class="header__body">
+				<div class="header__logo">
+					<img src="images/logo.svg" alt="logo">
+				</div>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="#intro" class="header__link">ОБО МНЕ</a>
+						</li>
+						<li class="header__item">
+							<a href="#projects" class="header__link">ПОРТФОЛИО</a>
+						</li>
+						<li class="header__item">
+							<a href="#skills" class="header__link">НАВЫКИ</a>
+						</li>
+						<li class="header__item">
+							<a href="#contacts" class="header__link">КОНТАКТЫ</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__burger">
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="intro" id="intro">
+			<div class="container">
+				<div class="intro__body">
+					<div class="intro__block">
+						<h1 class="intro__title">
+							FRONTEND
+							РАЗРАБОТЧИК
+						</h1>
+						<div class="hr intro__hr"></div>
+						<p class="intro__subtitle">
+							Привет, меня зовут Расул, мне 23 года, возможно я тот самый человек который вам нужен
+						</p>
+						<a href="#contacts" class="btn-reset button intro__btn">НАПИСАТЬ МНЕ</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section projects" id="projects">
+			<div class="container">
+				<div class="hr"></div>
+				<h2 class="section__title">ПОРТФОЛИО</h2>
+				<ul class="project__names">
+					<li data-f='react' class="project__name react active">React JS</li>
+					<li data-f='javascript' class="project__name javascript">JavaScript</li>
+					<li data-f='layout' class="project__name layout">Вёрстка</li>
+				</ul>
+				<div class="projects__cards">
+					<div class="projects__card react">
+						<div class="projects__card-top">
+							<p class="projects__card-title">Calendar Events</p>
+							<span>
+								<a href="https://www.figma.com/file/DrWeaMzFD9lRBhWeFnThat/%D0%9C%D0%BE%D1%81%D0%9C%D0%B5%D1%82%D1%80%D0%BE?node-id=0%3A1" class="projects__card-link" target="_blank">
+									<img src="images/project-figma.png" alt="">
+								</a>
+								<a href="https://github.com/rasul-surname/events-calendar" class="projects__card-link" target="_blank">
+									<img src="images/project-github.png" alt="">
+								</a>
+								<a href="https://rasul-surname.github.io/events-calendar" class="projects__card-link" target="_blank">
+									<img src="images/project-play.png" alt="">
+								</a>
+							</span>
+						</div>
+						<a href="https://rasul-surname.github.io/events-calendar" target="_blank">
+							<div class="projects__card-bottom">
+								<div class="projects__card-billet">
+									<div class="projects__card-desc">
+										<p>Календарь мероприятий <hr><br> запись, отписка, фильтры, ограничения</p>
+										<p class="projects__card-desc-bottom">React, Redux, TypeScript, Material UI, Moment.js</p>
+									</div>
+								</div>
+								<img src="images/projects-calendarevents.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="projects__card react">
+						<div class="projects__card-top">
+							<p class="projects__card-title">Coffee Shop</p>
+							<span>
+								<a href="https://www.figma.com/file/mm31UiNx1irbjSnQZKxiF4/CoffeeShop?node-id=0%3A1" class="projects__card-link" target="_blank">
+									<img src="images/project-figma.png" alt="">
+								</a>
+								<a href="https://github.com/rasul-surname/coffee-shop" class="projects__card-link" target="_blank">
+									<img src="images/project-github.png" alt="">
+								</a>
+								<a href="https://rasul-surname.github.io/coffee-shop" class="projects__card-link" target="_blank">
+									<img src="images/project-play.png" alt="">
+								</a>
+							</span>
+						</div>
+						<a href="https://rasul-surname.github.io/coffee-shop" target="_blank">
+							<div class="projects__card-bottom">
+								<div class="projects__card-billet">
+									<div class="projects__card-desc">
+										<p>Страница для покупки кофе <hr><br> пагинация, счетчики, корзина, расчёты, лоадер, error page</p>
+										<p class="projects__card-desc-bottom">React, Redux, TypeScript, Material UI</p>
+									</div>
+								</div>
+								<img src="images/projects-coffeeshop.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="projects__card react">
+						<div class="projects__card-top">
+							<p class="projects__card-title">Sravni Ru</p>
+							<span>
+								<a href="https://www.figma.com/file/OSKKjNxVN8XJYENh8PgnSs/Sravni.ru?node-id=3%3A8" class="projects__card-link" target="_blank">
+									<img src="images/project-figma.png" alt="">
+								</a>
+								<a href="https://github.com/rasul-surname/react-sravni-test" class="projects__card-link" target="_blank">
+									<img src="images/project-github.png" alt="">
+								</a>
+								<a href="https://rasul-surname.github.io/react-sravni-test" class="projects__card-link" target="_blank">
+									<img src="images/project-play.png" alt="">
+								</a>
+							</span>
+						</div>
+						<a href="https://rasul-surname.github.io/react-sravni-test" target="_blank">
+							<div class="projects__card-bottom">
+								<div class="projects__card-billet">
+									<div class="projects__card-desc">
+										<p>Финансовые предложения <hr><br> JSON-server, лоадер, подгрузка доп инфо, переход на страницу товара, фильтры, сортировки</p>
+										<p class="projects__card-desc-bottom">React, Redux, TypeScript, JSON-server</p>
+									</div>
+								</div>
+								<img src="images/projects-sravni.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="projects__card react">
+						<div class="projects__card-top">
+							<p class="projects__card-title">Sport House</p>
+							<span>
+								<a href="https://www.figma.com/file/RVl0zLAsx9n9FDBtCdIiwE/Untitled?node-id=0%3A1" class="projects__card-link" target="_blank">
+									<img src="images/project-figma.png" alt="">
+								</a>
+								<a href="https://github.com/rasul-surname/react-sport-house" class="projects__card-link" target="_blank">
+									<img src="images/project-github.png" alt="">
+								</a>
+								<a href="https://rasul-surname.github.io/react-sport-house" class="projects__card-link" target="_blank">
+									<img src="images/project-play.png" alt="">
+								</a>
+							</span>
+						</div>
+						<a href="https://rasul-surname.github.io/react-sport-house" target="_blank">
+							<div class="projects__card-bottom">
+								<div class="projects__card-billet">
+									<div class="projects__card-desc">
+										<p>Интеллектуальный трекер задач <hr><br> таймер, календарь, диаграмма, фильтры, сортировки</p>
+										<p class="projects__card-desc-bottom">React, Redux, TypeScript, AntDesign, Recharts, Moment.js</p>
+									</div>
+								</div>
+								<img src="images/projects-sporthouse.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="projects__card react">
+						<div class="projects__card-top">
+							<p class="projects__card-title">Personal Area</p>
+							<span>
+								<a href="https://github.com/rasul-surname/app-authorization" class="projects__card-link" target="_blank">
+									<img src="images/project-github.png" alt="">
+								</a>
+							</span>
+						</div>
+						<a href="https://github.com/rasul-surname/app-authorization" target="_blank">
+							<div class="projects__card-bottom">
+								<div class="projects__card-billet">
+									<div class="projects__card-desc">
+										<p>Личный кабинет с Firebase <hr><br> регистрация, авторизация, работа с БД Firebase, таблица юзеров, уровень доступа</p>
+										<p class="projects__card-desc-bottom">React, Redux, Next, Firebase, AntDesign</p>
+									</div>
+								</div>
+								<img src="images/projects-personalarea.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="projects__card react">
+						<div class="projects__card-top">
+							<p class="projects__card-title">Cube Word</p>
+							<span>
+								<a href="https://github.com/rasul-surname/demo-reword" class="projects__card-link" target="_blank">
+									<img src="images/project-github.png" alt="">
+								</a>
+								<a href="https://rasul-surname.github.io/demo-reword/" class="projects__card-link" target="_blank">
+									<img src="images/project-play.png" alt="">
+								</a>
+							</span>
+						</div>
+						<a href="https://rasul-surname.github.io/demo-reword/" target="_blank">
+							<div class="projects__card-bottom">
+								<div class="projects__card-billet">
+									<div class="projects__card-desc">
+										<p>
+											Тренажер иностранных слов <hr><br> переварачивающиеся карточки, добавление, удаление, фильтрация, сортировка
+										</p>
+										<p class="projects__card-desc-bottom">React, Redux, React TG, Material UI</p>
+									</div>
+								</div>
+								<img src="images/projects-reword.jpg" alt="">
+							</div>
+						</a>
+					</div>
+
+					<div class="projects__card javascript">
+						<div class="projects__card-top">
+							<p class="projects__card-title">Cube Money</p>
+							<span>
+								<a href="https://github.com/rasul-surname/cube-money" class="projects__card-link" target="_blank">
+									<img src="images/project-github.png" alt="">
+								</a>
+								<a href="https://rasul-surname.github.io/cube-money/" class="projects__card-link" target="_blank">
+									<img src="images/project-play.png" alt="">
+								</a>
+							</span>
+						</div>
+						<a href="https://rasul-surname.github.io/cube-money/" target="_blank">
+							<div class="projects__card-bottom">
+								<div class="projects__card-billet">
+									<div class="projects__card-desc">
+										<p>Приложение для иллюстрации расходов на круговом графике. Есть баги</p>
+										<p class="projects__card-desc-bottom">JavaScript, Chart.js, Html, Css, Figma</p>
+									</div>
+								</div>
+								<img src="images/projects-cubemoney.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="projects__card javascript">
+						<div class="projects__card-top">
+							<p class="projects__card-title">Cube Game</p>
+							<span>
+								<a href="https://github.com/rasul-surname/cube-game" class="projects__card-link" target="_blank">
+									<img src="images/project-github.png" alt="">
+								</a>
+								<a href="https://rasul-surname.github.io/cube-game/" class="projects__card-link" target="_blank">
+									<img src="images/project-play.png" alt="">
+								</a>
+							</span>
+						</div>
+						<a href="https://rasul-surname.github.io/cube-game/" target="_blank">
+							<div class="projects__card-bottom">
+								<div class="projects__card-billet">
+									<div class="projects__card-desc">
+										<p>
+											Реализация игры Шульте для увелечения периферического
+											зрения
+										</p>
+										<p class="projects__card-desc-bottom">JavaScript, Html, Css</p>
+									</div>
+								</div>
+								<img src="images/projects-cubegame.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="projects__card javascript">
+						<div class="projects__card-top">
+							<p class="projects__card-title">Regular Expression</p>
+							<span>
+								<a href="https://github.com/rasul-surname/regular-expressions" class="projects__card-link" target="_blank">
+									<img src="images/project-github.png" alt="">
+								</a>
+								<a href="https://rasul-surname.github.io/regular-expressions/" class="projects__card-link" target="_blank">
+									<img src="images/project-play.png" alt="">
+								</a>
+							</span>
+						</div>
+						<a href="https://rasul-surname.github.io/regular-expressions/" target="_blank">
+							<div class="projects__card-bottom">
+								<div class="projects__card-billet">
+									<div class="projects__card-desc">
+										<p>
+											Работа с регулярными выражениями: поиск по БД,
+											преобразования, проверка на валидность, сравнение с шаблонами...
+										</p>
+										<p class="projects__card-desc-bottom">JavaScript, RegExp, Bootstrap, Html, Css</p>
+									</div>
+								</div>
+								<img src="images/projects-regularexpression.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="projects__card javascript">
+						<div class="projects__card-top">
+							<p class="projects__card-title">Data Store</p>
+							<span>
+								<a href="https://github.com/rasul-surname/data-store" class="projects__card-link" target="_blank">
+									<img src="images/project-github.png" alt="">
+								</a>
+								<a href="https://rasul-surname.github.io/data-store/" class="projects__card-link" target="_blank">
+									<img src="images/project-play.png" alt="">
+								</a>
+							</span>
+						</div>
+						<a href="https://rasul-surname.github.io/data-store/" target="_blank">
+							<div class="projects__card-bottom">
+								<div class="projects__card-billet">
+									<div class="projects__card-desc">
+										<p>
+											Список дел и кликер с использованием локального хранилища браузера
+										</p>
+										<p class="projects__card-desc-bottom">JavaScript, LocalStorage, Html, Css</p>
+									</div>
+								</div>
+								<img src="images/projects-datastore.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="projects__card javascript">
+						<div class="projects__card-top">
+							<p class="projects__card-title">Motion Cube</p>
+							<span>
+								<a href="https://github.com/rasul-surname/motion-cube" class="projects__card-link" target="_blank">
+									<img src="images/project-github.png" alt="">
+								</a>
+								<a href="https://rasul-surname.github.io/motion-cube/" class="projects__card-link" target="_blank">
+									<img src="images/project-play.png" alt="">
+								</a>
+							</span>
+						</div>
+						<a href="https://rasul-surname.github.io/motion-cube/" target="_blank">
+							<div class="projects__card-bottom">
+								<span class="projects__card-billet">
+									<p class="projects__card-desc">Простое адаптивное приложение для получения мотивации на каждый день</p>
+								</span>
+								<img src="images/projects-motioncube.jpg" alt="">
+							</div>
+						</a>
+					</div>	
+
+					<div class="projects__card layout">
+						<div class="projects__card-top">
+							<p class="projects__card-title">Fixper</p>
+						</div>
+						<a href="https://rasul-surname.github.io/fixper/" target="_blank">
+							<div class="projects__card-bottom">
+								<span class="projects__card-billet">
+									<p class="projects__card-desc">Корпоративный сайт фирмы по ремонту холодильников</p>
+								</span>
+								<img src="images/projects-fixper.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="projects__card layout">
+						<div class="projects__card-top">
+							<p class="projects__card-title">MaxSokol</p>
+						</div>
+						<a href="https://rasul-surname.github.io/maxsokol/" target="_blank">
+							<div class="projects__card-bottom">
+								<span class="projects__card-billet">
+									<p class="projects__card-desc">Сайт UX / UI дизайнера из Москвы</p>
+								</span>
+								<img src="images/projects-maxsokol.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="projects__card layout">
+						<div class="projects__card-top">
+							<p class="projects__card-title">Pinochio</p>
+						</div>
+						<a href="https://rasul-surname.github.io/pinocchio/" target="_blank">
+							<div class="projects__card-bottom">
+								<span class="projects__card-billet">
+									<p class="projects__card-desc">Лендниг компании осуществляющей приготовление и доставку
+										десертов</p>
+								</span>
+								<img src="images/projects-pinochio.jpg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="projects__card layout">
+						<div class="projects__card-top">
+							<p class="projects__card-title">Thrivetalk</p>
+						</div>
+						<a href="https://rasul-surname.github.io/thrivetalk/" target="_blank">
+							<div class="projects__card-bottom">
+								<span class="projects__card-billet">
+									<p class="projects__card-desc">Лендниг компании занимающейся лечением психического
+										здоровья</p>
+								</span>
+								<img src="images/projects-thrivetalk.jpg" alt="">
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section skills" id="skills">
+			<div class="container">
+				<div class="hr"></div>
+				<h2 class="section__title">НАВЫКИ</h2>
+				<div class="skills__cards">
+					<a href="https://habr.com/ru/company/quarkly/blog/552214/" class="skills__card" target="_blank">
+						<img class="skills__card-link" src="images/skill-link.png" alt="">
+						<img src="images/skill-react.svg" alt="React" class="skills__card-img">
+						<p class="skills__card-title">React</p>
+					</a>
+					<a href="https://habr.com/ru/post/557938/" class="skills__card" target="_blank">
+						<img class="skills__card-link" src="images/skill-link.png" alt="">
+						<img src="images/skill-ts.svg" alt="TypeScript" class="skills__card-img">
+						<p class="skills__card-title">TypeScript</p>
+					</a>
+					<a href="https://habr.com/ru/company/timeweb/blog/588498/" class="skills__card" target="_blank">
+						<img class="skills__card-link" src="images/skill-link.png" alt="">
+						<img src="images/skill-next.svg" alt="Next.js" class="skills__card-img">
+						<p class="skills__card-title">Next.js</p>
+					</a>
+					<a href="https://ru.wikipedia.org/wiki/Firebase" class="skills__card" target="_blank">
+						<img class="skills__card-link" src="images/skill-link.png" alt="">
+						<img src="images/skill-firebase.svg" alt="Firebase" class="skills__card-img">
+						<p class="skills__card-title">Firebase</p>
+					</a>
+					<a href="https://habr.com/ru/company/simbirsoft/blog/416925/" class="skills__card more" target="_blank">
+						<img class="skills__card-link" src="images/skill-link.png" alt="">
+						<img src="images/skill-antdesign.svg" alt="AntDesign" class="skills__card-img">
+						<p class="skills__card-title">AntDesign</p>
+					</a>
+					<a href="https://habr.com/ru/post/492378/" class="skills__card more" target="_blank">
+						<img class="skills__card-link" src="images/skill-link.png" alt="">
+						<img src="images/skill-mui.png" alt="Material UI" class="skills__card-img">
+						<p class="skills__card-title">Material UI</p>
+					</a>
+					<a href="https://habr.com/ru/company/developersoft/blog/185210/" class="skills__card more" target="_blank">
+						<img class="skills__card-link" src="images/skill-link.png" alt="">
+						<img src="images/skill-chartjs.png" alt="Chart.js" class="skills__card-img">
+						<p class="skills__card-title">Chart.js</p>
+					</a>
+					<a href="https://habr.com/ru/post/494810/" class="skills__card more" target="_blank">
+						<img class="skills__card-link" src="images/skill-link.png" alt="">
+						<img src="images/skill-three.svg" alt="Three.js" class="skills__card-img">
+						<p class="skills__card-title">Three.js</p>
+					</a>
+
+					<a href="https://habr.com/ru/post/514838/" class="skills__card" target="_blank">
+						<img class="skills__card-link" src="images/skill-link.png" alt="">
+						<img src="images/skill-webpack.svg" alt="Webpack" class="skills__card-img">
+						<p class="skills__card-title">Webpack</p>
+					</a>
+					<a href="https://ru.wikipedia.org/wiki/Gulp" class="skills__card" target="_blank">
+						<img class="skills__card-link" src="images/skill-link.png" alt="">
+						<img src="images/skill-gulp.svg" alt="Gulp" class="skills__card-img">
+						<p class="skills__card-title">Gulp</p>
+					</a>
+					<a href="https://habr.com/ru/post/471924/" class="skills__card more" target="_blank">
+						<img class="skills__card-link" src="images/skill-link.png" alt="">
+						<img src="images/skill-sass.svg" alt="Sass" class="skills__card-img">
+						<p class="skills__card-title">Sass</p>
+					</a>
+					<a href="https://habr.com/ru/post/251759/" class="skills__card more" target="_blank">
+						<img class="skills__card-link" src="images/skill-link.png" alt="">
+						<img src="images/skill-swiperjs.png" alt="Swiper.js" class="skills__card-img">
+						<p class="skills__card-title">Swiper.js</p>
+					</a>
+				</div>
+				<!-- <button class="btn-reset button skills__btn">СМОТРЕТЬ ЕЩЁ</button> -->
+			</div>
+		</section>
+		</section>
+		<section class="section contacts" id="contacts">
+			<div class="container">
+				<div class="hr"></div>
+				<h2 class="section__title">КОНТАКТЫ</h2>
+				<div class="contacts__body">
+					<p class="contacts__text">
+						Если вам понравились мои работы и у вас есть вопросы, идеи, предложения о сотрудничестве,
+						напишите мне в любом мессенджере и я обязательно вам отвечу.
+					</p>
+					<div class="contacts__row">
+						<a href="https://github.com/rasul-surname" target="_blank" class="contacts__link">github</a>
+						<a href="https://t.me/Rasul_Surname" target="_blank" class="contacts__link">telegram</a>
+						<a href="https://join.skype.com/invite/I5aXN8QUG0qV" target="_blank"
+							class="contacts__link">skype</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__body">
+				<img class="footer__img" src="images/logo.svg" alt="logo">
+				<p class="footer__text">
+					Султанбеков Расул © 2021 г.
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/three.min.js"></script>
+	<script src="js/vanta.net.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
